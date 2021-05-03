@@ -1,6 +1,6 @@
 .navBar {
   background-color: #d6edf6;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .navBar-Brand {
@@ -10,6 +10,15 @@
 .navBar a {
   text-decoration: none;
   color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  display: none;
 }
 
 .navBar-Brand i {
@@ -34,11 +43,63 @@
   font-weight: 400;
 }
 
-.navList li:hover {
+.navList li:hover,
+.navList li:focus {
   background-color: #38b6e6;
   color: white;
 }
 
 .navList li:hover a {
   color: white;
+}
+
+@media screen and (max-width: 1333px) {
+  .navList {
+    height: 80px;
+  }
+
+  .navList li {
+    width: 130px;
+  }
+
+  .navBar-Brand {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: -18px;
+  }
+
+  .dropdown button {
+    display: block;
+  }
+
+  .navList {
+    height: 100%;
+  }
+
+  .navList li {
+    display: list-item;
+    width: auto;
+    height: auto;
+    font-size: 17px;
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    line-height: 1.5;
+    background-color: rgba(240, 245, 245, 0.4);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navBar .container {
+    height: 50px;
+  }
 }
