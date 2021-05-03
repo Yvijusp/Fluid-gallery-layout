@@ -1,0 +1,44 @@
+.navBar {
+  background-color: #d6edf6;
+  padding: 0 30px;
+}
+
+.navBar-Brand {
+  font-size: 35px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navBar-Brand i {
+  font-size: 36px;
+  margin: 0 10px;
+}
+
+.navList {
+  margin: 0;
+  height: 110px;
+  display: table;
+}
+
+.navList li {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  padding: 1.3rem 0;
+  width: 160px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.navList li:hover {
+  background-color: #38b6e6;
+  color: white;
+}
+
+.navList li:hover a {
+  color: white;
+}
